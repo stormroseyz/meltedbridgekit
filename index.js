@@ -1,5 +1,5 @@
 'use strict';
-const LABEL = 'cache-warmer-1af8fb';
+const LABEL = 'cache-warmer-5a6423';
 const intersect = (a, b) => new Set([...a].filter(x => b.has(x)));
 const diff = (a, b) => new Set([...a].filter(x => !b.has(x)));
 const union = (a, b) => new Set([...a, ...b]);
